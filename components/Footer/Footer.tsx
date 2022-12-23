@@ -43,9 +43,9 @@ export const Footer = () => {
           </Link>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-gray-700">
-              ABC Kamea to firma z ugruntowaną pozycją rynku, obecna na rynku od
-              1974 roku. Wieloletnie doświadczenie łączymy z indywidualnym
-              podejściem do każdego klienta.
+              ABC Kamea to firma z ugruntowaną pozycją, obecna na rynku od 1974
+              roku. Wieloletnie doświadczenie łączymy z indywidualnym podejściem
+              do każdego klienta.
             </p>
             <p className="mt-4 text-sm text-gray-700">
               Zapraszamy do kontaktu w wybranej formie.
