@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { OrderButton } from "./common";
-import heroStampLeft from "../public/header/heroStamp1.svg";
-import heroStampRight from "../public/header/heroStamp2.svg";
+import heroStampLeft from "../public/header/heroStamp2.svg";
+import heroStampRight from "../public/header/heroStamp1.svg";
 
 export const Header = () => {
   return (
