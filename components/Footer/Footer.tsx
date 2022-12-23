@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FooterColumn } from "./FooterColumn";
+import logo from "../../public/logo.png";
 
 const STAMPS_COLUMN = {
   title: { href: "#pieczatki", label: "Pieczątki" },
@@ -35,7 +36,7 @@ export const Footer = () => {
             title="ABC Kamea"
             className="inline-flex items-center"
           >
-            <Image src="/Logo.png" alt="logo" width={50} height={50} />
+            <Image src={logo} alt="logo" width={50} height={50} />
             <span className="ml-2 text-xl font-semibold tracking-wide text-gray-800 uppercase">
               ABC Kamea
             </span>
