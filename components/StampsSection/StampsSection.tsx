@@ -5,6 +5,7 @@ const CATEGORIES_1 = [
   { title: "w automatach: WAGRAF, COLOP, TRODAT" },
   { title: "datowniki i numeratory" },
   { title: "fleszowe" },
+  { title: "tabelaryczne" },
 ];
 
 const CATEGORIES_2 = [
@@ -36,7 +37,7 @@ export const StampsSection = () => {
               </span>
             </h3>
             <p className="text-base text-gray-700 font-light md:text-lg">
-              Ponad 30-letnie doświadczenie na rynku łączymy z szerokim wyborem
+              Ponad 50-letnie doświadczenie na rynku łączymy z szerokim wyborem
               asortymentu oraz fachowym doradztwem wyboru modelu i rodzaju
               pieczątki w zależności od indywidualnych potrzeb klienta.
             </p>
