@@ -103,7 +103,7 @@ export const Footer = () => {
       </div>
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
         <p className="text-sm text-gray-600">
-          © Copyright 2022 Created by:{" "}
+          © Copyright 2023 Created by:{" "}
           <Link
             href="https://www.linkedin.com/in/rafa%C5%82-p%C5%82oszka-2750071ab/"
             target="_blank"
