@@ -112,7 +112,7 @@ export const OrderForm = ({ setOrderStatus }: OrderFormProps) => {
           </option>
           <option value="stamp">Stempel drewniany</option>
           <option value="dater">Datownik</option>
-          <option value="flesh">fleszowa</option>
+          <option value="flesh">Fleszowa</option>
         </select>
       </div>
 
