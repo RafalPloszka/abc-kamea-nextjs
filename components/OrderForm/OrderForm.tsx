@@ -201,12 +201,12 @@ export const OrderForm = ({ setOrderStatus }: OrderFormProps) => {
 };
 
 function parseOrderContent(data: Inputs) {
-  return {
+  return Object.freeze({
     email: data.email,
     "numer telefonu": data.phone,
     "rodzaj pieczątki": data.stampType,
     treść: data.content,
     "kolor tuszu": data.color,
     "dodatkowe informacje": data.info ?? "-",
-  };
+  });
 }
