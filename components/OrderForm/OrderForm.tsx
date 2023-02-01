@@ -107,9 +107,12 @@ export const OrderForm = ({ setOrderStatus }: OrderFormProps) => {
           className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:border-indigo-accent-400 block w-full p-2.5"
         >
           <option selected>Dowolna</option>
-          <option value="automate" className="text-red">
+          <option value="automat" className="text-red">
             W automacie
           </option>
+          <option value="stempel">Stempel drewniany</option>
+          <option value="datownik">Datownik</option>
+          <option value="fleszowa">Fleszowa</option>
           <option value="stamp">Stempel drewniany</option>
           <option value="dater">Datownik</option>
           <option value="flesh">Fleszowa</option>
@@ -146,13 +149,17 @@ export const OrderForm = ({ setOrderStatus }: OrderFormProps) => {
           id="color"
           className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:border-indigo-accent-400 block w-full p-2.5"
         >
-          <option value="black" selected>
+          <option value="czarny" selected>
             Czarny
           </option>
+          <option value="czerwony">Czerwony</option>
+          <option value="niebieski">Niebieski</option>
+          <option value="zielony">Zielony</option>
           <option value="red">Czerwony</option>
           <option value="blue">Niebieski</option>
           <option value="green">Zielony</option>
           <option value="other">Inny/specjalistyczny</option>
+          <option value="inny">Inny/specjalistyczny</option>
         </select>
       </div>
 
