@@ -113,9 +113,7 @@ export const OrderForm = ({ setOrderStatus }: OrderFormProps) => {
           <option value="stempel">Stempel drewniany</option>
           <option value="datownik">Datownik</option>
           <option value="fleszowa">Fleszowa</option>
-          <option value="stamp">Stempel drewniany</option>
-          <option value="dater">Datownik</option>
-          <option value="flesh">Fleszowa</option>
+          <option value="inna">Inna</option>
         </select>
       </div>
 
@@ -155,10 +153,7 @@ export const OrderForm = ({ setOrderStatus }: OrderFormProps) => {
           <option value="czerwony">Czerwony</option>
           <option value="niebieski">Niebieski</option>
           <option value="zielony">Zielony</option>
-          <option value="red">Czerwony</option>
-          <option value="blue">Niebieski</option>
-          <option value="green">Zielony</option>
-          <option value="other">Inny/specjalistyczny</option>
+          <option value="fioletowy">Fioletowy</option>
           <option value="inny">Inny/specjalistyczny</option>
         </select>
       </div>
