@@ -164,9 +164,10 @@ export const OrderForm = ({ setOrderStatus }: OrderFormProps) => {
       </div>
 
       <div className="col-span-2 mt-6">
-        <span>3. Uwagi</span>
+        <span>3. Uwagi (opcjonalnie)</span>
         <p className="text-sm font-light text-gray-600">
-          Proszę podać wszystkie dodatkowe informacje. Na przykład...
+          Proszę podać dodatkowe informacje nieujęte w polach powyżej. Na
+          przykład wymiary pieczątki czy specjalne wymagania.
         </p>
       </div>
 
