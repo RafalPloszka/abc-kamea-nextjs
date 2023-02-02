@@ -1,6 +1,6 @@
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm, SubmitHandler, useWatch } from "react-hook-form";
 import axios from "axios";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { OrderStatus } from "pages/order";
 
 type Inputs = {
@@ -17,11 +17,16 @@ interface OrderFormProps {
 }
 
 export const OrderForm = ({ setOrderStatus }: OrderFormProps) => {
-  const { register, handleSubmit } = useForm<Inputs>();
+  const { getValues, control, register, handleSubmit } = useForm<Inputs>();
+  const [showPreview, setShowPreview] = useState(false);
+
+  const content = useWatch({
+    control,
+    name: "content",
+    defaultValue: "",
+  });
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    console.log(data);
-
     axios({
       method: "POST",
       url: "https://formspree.io/f/xpzeqlng",
@@ -181,11 +186,21 @@ export const OrderForm = ({ setOrderStatus }: OrderFormProps) => {
         />
       </div>
 
+      {showPreview && (
+        <div className="col-span-2 flex flex-col items-center gap-2 pt-4">
+          <p>Podgląd:</p>
+          <div className="p-6 font-mono text-lg whitespace-pre-wrap border text-center tracking-wider">
+            {getValues("content")}
+          </div>
+        </div>
+      )}
+
       <div className="col-span-2 mt-4 md:col-span-1">
         <button
-          onClick={() => console.log("Preview")}
-          className="inline-flex items-center justify-center w-full h-12 px-6 font-normal transition duration-200 bg-white border border-gray-300 rounded hover:bg-gray-100 focus:shadow-outline focus:outline-none"
-          disabled
+          type="button"
+          onClick={() => setShowPreview(true)}
+          className="inline-flex items-center justify-center w-full h-12 px-6 font-normal transition duration-200 bg-white border border-gray-300 rounded hover:bg-gray-100 disabled:bg-white disabled:text-gray-300 focus:shadow-outline focus:outline-none"
+          disabled={content === ""}
         >
           Wygeneruj podgląd
         </button>
