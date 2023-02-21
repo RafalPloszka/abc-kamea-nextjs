@@ -17,7 +17,7 @@ const CONTACT_ITEMS = [
     ),
     href: "tel:602332499",
     label: "602 332 499",
-    description: "Odbieramy telefon od poniedziałku do piątku: 8:00 - 17:00",
+    description: "Odbieramy telefon od poniedziałku do piątku: 9:00 - 20:00",
     ariaLabel: "Numer telefonu",
   },
   {
