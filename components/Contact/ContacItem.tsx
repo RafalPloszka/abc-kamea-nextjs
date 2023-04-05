@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 interface ContactItemProps {
-  iconPath: React.ReactNode;
+  icon: React.ReactNode;
   href?: string;
   label: string;
   description: string;
@@ -11,7 +11,7 @@ interface ContactItemProps {
 }
 
 export const ContactItem = ({
-  iconPath,
+  icon,
   href,
   label,
   description,
@@ -27,14 +27,7 @@ export const ContactItem = ({
           aria-label={ariaLabel}
           className="flex items-center justify-center w-10 h-10 mb-3 rounded-full border-2 bg-indigo-50 transition-colors duration-300 hover:border-indigo-accent-200"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            width="24"
-            className="fill-indigo-accent-400"
-          >
-            {iconPath}
-          </svg>
+          {icon}
         </Link>
       </div>
       <div className="w-full">
