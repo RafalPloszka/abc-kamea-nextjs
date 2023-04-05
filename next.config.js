@@ -2,14 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    fontLoaders: [
-      {
-        loader: "@next/font/google",
-        options: { subsets: ["latin", "latin-ext"] },
-      },
-    ],
-  },
   i18n: {
     locales: ["pl"],
     defaultLocale: "pl",
