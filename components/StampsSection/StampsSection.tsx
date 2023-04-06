@@ -1,6 +1,7 @@
 import { CategoryItem } from "@/components/common";
-import { StampsCarousel } from "./StampsCarousel";
 import { RepairIcon, StarIcon, TimerIcon } from "@/components/icons";
+
+import { StampsCarousel } from "./StampsCarousel";
 
 const CATEGORIES_1 = [
   { title: "w automatach: WAGRAF, COLOP, TRODAT" },

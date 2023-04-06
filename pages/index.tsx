@@ -1,10 +1,11 @@
+import Head from "next/head";
 import { Contact } from "@/components/Contact/Contact";
 import { EngraverSection } from "@/components/EngraverSection/EngraverSection";
 import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header";
 import { Navbar } from "@/components/Navbar/Navbar";
 import { StampsSection } from "@/components/StampsSection/StampsSection";
-import Head from "next/head";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const DESCRIPTION = "ABC Kamea - Pieczątki: ";

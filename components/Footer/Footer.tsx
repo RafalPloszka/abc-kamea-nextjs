@@ -1,7 +1,9 @@
-import Link from "next/link";
 import Image from "next/image";
-import { FooterColumn } from "./FooterColumn";
+import Link from "next/link";
+
 import logo from "../../public/logo.png";
+
+import { FooterColumn } from "./FooterColumn";
 
 const STAMPS_COLUMN = {
   title: { href: "#pieczatki", label: "Pieczątki" },

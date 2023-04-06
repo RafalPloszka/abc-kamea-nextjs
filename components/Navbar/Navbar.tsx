@@ -1,6 +1,8 @@
-import Link from "next/link";
 import { useState } from "react";
+import Link from "next/link";
+
 import { OrderButton } from "../common";
+
 import { NavbarLink } from "./components/NavbarLink";
 import { NavbarLogoLink } from "./components/NavbarLogoLink";
 

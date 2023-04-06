@@ -1,11 +1,11 @@
+import { useState } from "react";
+import Head from "next/head";
+import Link from "next/link";
+import { GoBackIcon } from "@/components/icons";
 import { OrderForm } from "@/components/OrderForm";
 import { ErrorInfo } from "@/components/OrderForm/ErrorInfo";
 import { SuccessInfo } from "@/components/OrderForm/SuccessInfo";
 import { OrderTutorial } from "@/components/OrderTutorial";
-import { GoBackIcon } from "@/components/icons";
-import Head from "next/head";
-import Link from "next/link";
-import { useState } from "react";
 
 export type OrderStatus = "pending" | "success" | "error";
 

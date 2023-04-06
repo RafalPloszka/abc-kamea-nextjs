@@ -1,6 +1,7 @@
-import { CategoryItem } from "components/common";
-import { EngraverCarousel } from "./EngraverCarousel";
+import { CategoryItem } from "@/components/common";
 import { ChoiceIcon, HelpIcon, QualityIcon } from "@/components/icons";
+
+import { EngraverCarousel } from "./EngraverCarousel";
 
 const CATEGORIES_1 = [
   {

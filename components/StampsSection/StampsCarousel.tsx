@@ -1,11 +1,11 @@
 import { Carousel, CarouselImage } from "components/Carousel";
 
-import stampPic1 from "../../public/stamps/trodat_black.jpeg";
 import stampPic2 from "../../public/stamps/blue.jpeg";
-import stampPic3 from "../../public/stamps/wood.jpeg";
-import stampPic4 from "../../public/stamps/dates.jpeg";
 import stampPic5 from "../../public/stamps/cassette.jpeg";
+import stampPic4 from "../../public/stamps/dates.jpeg";
+import stampPic1 from "../../public/stamps/trodat_black.jpeg";
 import stampPic6 from "../../public/stamps/wagraf.jpeg";
+import stampPic3 from "../../public/stamps/wood.jpeg";
 
 const stampsImages: CarouselImage[] = [
   { src: stampPic1, alt: "Pieczątki w automatach Trodat" },

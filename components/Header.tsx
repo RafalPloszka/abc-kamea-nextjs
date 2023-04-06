@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import hero from "../public/header/heroImage.webp";
 
 export const Header = () => {
